@@ -1,0 +1,45 @@
+/* static/css/styles.css */
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text color */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #d1a9e4; /* Violet color for the heading */
+}
+
+form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 2px solid #d1a9e4; /* Violet border */
+  border-radius: 5px;
+  background-color: #1f1f1f; /* Slightly lighter background for input */
+  color: #e0e0e0;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #d1a9e4; /* Violet button */
+  color: #121212;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b98fd8; /* Slightly darker violet on hover */
+}
+
+#weather {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

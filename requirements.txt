@@ -1,1 +1,6 @@
 geopy
+pytest
+requests
+Flask-SQLAlchemy
+Flask-Migrate
+Flask
