@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <h1>Weather App</h1>
+    <form method="post">
+      <input type="text" id="city" name="city" placeholder="Enter city">
+      <button type="submit">Get Weather</button>
+    </form>
+    <div id="weather">
+      {% if weather %}
+        <h2>Weather in {{ city }}</h2>
+        <img src="data:image/png;base64,{{ plot_url }}" alt="Weather Plot">
+    {% elif last_city %}
+        <p>Last checked city: {{ last_city }}</p>
+    {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='js/autocomplete.js') }}"></script>
+  </body>
+</html>
